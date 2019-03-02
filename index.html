@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+<title>Accelerometer Test!</title>
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+<script>
+
+//var deviceMotionEvent = new DeviceMotionEvent(devicemotion, acceleration);
+window.addEventListener('devicemotion', function(event) {
+  console.log(event.acceleration.x + ' m/s2');
+  document.getElementById("demo").value = event.acceleration.x + ' m/s^2'; 
+});
+
+
+
+
+
+</html>
